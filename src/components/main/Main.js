@@ -4,16 +4,14 @@ import hello from "../../assets/cisco.png"
 import Chart from "../charts/Chart"
 
 const Main = () => {
-
-    document.getElementById("date").innerHTML = new Date().toLocaleDateString()
-
+    var today = new Date().toLocaleDateString()
     return (
         <main>
             <div className="main__container">
                 <div className="main__title">
                     <img src={hello} alt="hello"></img>
                     <div className="main__greeting">
-                        <p id="date" ></p>
+                        <p id="date" >{today} </p>
                         <p>Welcome to Dashboard</p>
                     </div>
                 </div>
